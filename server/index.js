@@ -21,7 +21,7 @@ const app = express();
 //using middleware
 app.use(express.json());
 app.use(cors({
-    origin: [process.env.CLIENT_URL || "https://edublaze.netlify.app"], 
+    origin: process.env.CLIENT_URL,  // 5173
     credentials: true, // allow credentials to be sent
 }));
 const port = process.env.PORT || 5000;
