@@ -1,9 +1,12 @@
 import TryCatch from "../middlewares/tryCatch.js";
 import axios from "axios";
+import dotenv from "dotenv";
+dotenv.config();
 
-// Gemini API configuration - temporarily hardcoded for testing
-const GEMINI_API_KEY = "AIzaSyB3XC3Wt_iKrJ_A6Q1r2eDedFtUQX762sU" || process.env.GEMINI_API_KEY;
-const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent";
+
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+
+const GEMINI_API_URL = process.env.GEMINI_API_URL 
 
 // Fallback responses for when AI service is unavailable
 const getFallbackResponse = (message, userRole) => {
