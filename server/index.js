@@ -21,7 +21,7 @@ const app = express();
 //using middleware
 app.use(express.json());
 app.use(cors({
-    origin: ["http://localhost:5173" , "http://localhost:5174"], 
+    origin: process.env.CLIENT_URL, 
     credentials: true, // allow credentials to be sent
 }));
 const port = process.env.PORT || 5000;
