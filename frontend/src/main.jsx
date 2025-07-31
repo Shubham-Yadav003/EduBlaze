@@ -6,7 +6,7 @@ import { UserContextProvider } from './context/UserContex.jsx'
 import { CourseContextProvider } from './context/CourseContext.jsx';
 
 
-export const server = "http://localhost:5000";
+export const server = "https://edublaze-1.onrender.com";
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <UserContextProvider>
