@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { MdAccountCircle } from "react-icons/md";
 import AIAdvanced from '../ai/AIAdvanced';
 import { UserData } from '../../context/UserContex';
+import { IoIosLogIn} from "react-icons/io";
 
 function Header({ isAuth }) {
   const { user } = UserData();
@@ -13,14 +14,14 @@ function Header({ isAuth }) {
 
       <div className='link'>
         <Link to="/"> Home </Link>
-        <Link to="/courses"> Courses </Link>
+        <Link to="/courses">Courses </Link>
         <Link to="/about"> About </Link>
         {isAuth && <AIAdvanced user={user} />}
         {
           isAuth ? (
             <Link to="/account"> <MdAccountCircle /> </Link>
           ) : (
-            <Link to="/login"> Login </Link>
+           <a className='login-link'> <Link to="/login"> <IoIosLogIn />Login </Link> </a>
           )
         }
       </div>
