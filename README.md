@@ -12,6 +12,8 @@
 - 🔐 Secure authentication using JWT
 - 🧑‍🏫 Role-based access for students and admins
 - 🎨 Clean, responsive UI using Tailwind CSS
+- 🤖 AI for customer assistance using Google Gemini API.
+
 
 ---
 
