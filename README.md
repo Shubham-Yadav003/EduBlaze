@@ -34,21 +34,46 @@
 
 ---
 
-## 🚀 Getting Started – How to Run Locally
+🚀 Getting Started:- 📋 Prerequisites:
 
-### 1️⃣ Clone the Repository
+🖥️ Node.js v18+
 
-```bash
-git clone https://github.com/your-username/edublaze.git
-cd edublaze
- Set Up the Backend:
+📦 npm or yarn
+
+🗄️ MongoDB (local or cloud)
+
+1️⃣ Clone Repository
+git clone https://github.com/yourusername/EduBlaze.git
+cd EduBlaze
+
+2️⃣ Backend Setup
 cd server
 npm install
-Set Up the frontend:
-cd frontend
-npm install
-Create a .env file inside the backend/ folder with the following variables:
+Create .env in /server with:
 PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-AT LAST : npm run dev for both server and frontend
+MONGO_URL=your_mongodb_connection_string
+Jwt_Sec=your_jwt_secret
+Activation_Secret=your_activation_secret
+GEMINI_API_KEY=your_gemini_api_key
+GEMINI_API_URL=https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent
+Start backend: npm run dev
+
+3️⃣ Frontend Setup
+cd ../frontend
+npm install
+Start frontend: npm run dev
+🌐 App runs at http://localhost:5173
+
+📂 Folder Structure:
+server/ — Express backend (API, DB, controllers, models)
+frontend/ — React frontend (components, pages, assets)
+
+⚡ Scripts:
+Backend: npm run dev (dev), npm start (prod)
+Frontend: npm run dev (dev), npm run build (prod)
+
+🚢 Deployment:
+cd frontend && npm run build
+Serve the build folder or integrate with backend.
+
+💡 Credits: React, Vite, Express, MongoDB, Gemini API
