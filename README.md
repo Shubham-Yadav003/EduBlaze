@@ -43,7 +43,7 @@
 🗄️ MongoDB (local or cloud)
 
 1️⃣ Clone Repository
-git clone https://github.com/yourusername/EduBlaze.git
+git clone https://github.com/Shubham-Yadav003/EduBlaze.git
 cd EduBlaze
 
 2️⃣ Backend Setup
