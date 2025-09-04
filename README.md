@@ -1,6 +1,6 @@
 # 🚀 EduBlaze – Smart E-Learning Platform
 
-**EduBlaze** is an interactive e-learning platform designed to support self-paced learning with structured content, quizzes, progress tracking, and a user-friendly interface. Built using the MERN (MongoDB, Express.js, React.js, Node.js) stack, EduBlaze ensures a smooth and scalable user experience for both students and administrators.
+**EduBlaze** is an interactive e-learning platform designed to support self-paced learning with structured content, quizzes, progress tracking, and a user-friendly interface. Built using the MERN (MongoDB, Express.js, React.js, Node.js) stack, EduBlaze ensures a smooth and scalable user experience for both students and administrators along with gemini based ai assistant for user related queries.
 
 ---
 
