@@ -40,7 +40,7 @@
 
 📦 npm or yarn
 
-🗄️ MongoDB (local or cloud)
+🗄️ MongoDB 
 
 1️⃣ Clone Repository
 git clone https://github.com/Shubham-Yadav003/EduBlaze.git
